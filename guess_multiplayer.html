@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	var answer = parseInt(Math.random() * 100);
+
+	alert ("Компьютер загадал число от 0 до 99. Вам нужно его угадать!\nДля выхода из игры введите q");
+	var useranswer; 
+	var playernum = 1; 
+
+	while (true) {
+		
+		useranswer = prompt("Игрок " + playernum + " введите ответ");
+		
+		if (useranswer == "q") {
+			break;
+		}
+				
+		if (useranswer > answer ) {
+			alert ("Ваш ответ больше!");
+		} else if (useranswer < answer) {
+			alert ("Ваш ответ меньше!");
+		} else if (useranswer == answer) {
+			alert ("Вы угадали!");
+			alert ("Победил игрок " + playernum);
+			break;
+		} else {
+			alert ("Необходимо ввести число!");
+		}
+
+		if (playernum == 1) {
+			playernum = 2;
+		}	else playernum =1;
+				
+	}
+
+</script>
