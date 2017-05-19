@@ -11,11 +11,12 @@
 		
 		useranswer = prompt("Игрок " + playernum + " введите ответ");
 		
-		//выход по q
+		//Выход из цикла при ответе q
 		if (useranswer == "q") {
 			break;
 		}
-				
+		
+		//Проверка ответа		
 		if (useranswer > answer ) {
 			alert ("Ваш ответ больше!");
 		} else if (useranswer < answer) {
